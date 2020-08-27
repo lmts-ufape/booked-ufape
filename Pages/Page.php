@@ -128,7 +128,7 @@ abstract class Page implements IPage
         if (empty($logoUrl)) {
             $logoUrl = $this->path . Pages::UrlFromId($userSession->HomepageId);
         }
-        $this->smarty->assign('HomeUrl', $logoUrl);
+        $this->smarty->assign('HomeUrl', $logoUrl);       
 
         $detect = new Mobile_Detect();
         $this->IsMobile = $detect->isMobile();

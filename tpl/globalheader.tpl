@@ -52,10 +52,12 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
     <!-- End JavaScript -->
 
     <!-- CSS -->
+    {cssfile src="css/ufape.css" rel="stylesheet"}
     {if $UseLocalJquery}
         {cssfile src="scripts/css/smoothness/jquery-ui.1.12.1.custom.min.css"}
         {cssfile src="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet"}
         {cssfile src="scripts/bootstrap/css/bootstrap.css" rel="stylesheet"}
+        
         {if $Qtip}
             {cssfile src="css/jquery.qtip.min.css" rel="stylesheet"}
         {/if}
@@ -142,8 +144,14 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand"
-                   href="{$HomeUrl}">{html_image src="$LogoUrl?{$Version}" alt="$Title" class="logo"}</a>
+                <div id="logo">
+                    <a class="navbar-brand"
+                    href="{$HomeUrl}">{html_image src="$LogoUrl?{$Version}" alt="$Title" class="logo"}</a>
+                        
+                    <span id='booked'>booked -</span>
+                    <span id='ufape'>UFAPE</span>
+                </div>
+
             </div>
             <div class="collapse navbar-collapse" id="booked-navigation">
                 <ul class="nav navbar-nav">
@@ -308,9 +316,9 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">{translate key="Schedule"} <b
                                         class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li id="navViewSchedule"><a href="view-schedule.php">{translate key='ViewSchedule'}</a>
+                                <li id="navViewSchedule"><a class='navDireita' href="view-schedule.php">{translate key='ViewSchedule'}</a>
                                 </li>
-                                <li id="navViewCalendar"><a href="view-calendar.php">{translate key='ViewCalendar'}</a>
+                                <li id="navViewCalendar"><a class='navDireita' href="view-calendar.php">{translate key='ViewCalendar'}</a>
                                 </li>
                             </ul>
                         </li>
@@ -352,7 +360,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                             </ul>
                         </li>
                     {/if}
-                    <li class="dropdown" id="navHelpDropdown">
+                    <li class="dropdown" id="navHelpDropdown">                    
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">{translate key="Help"} <b
                                     class="caret"></b></a>
                         <ul class="dropdown-menu">
@@ -366,7 +374,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                     {if $LoggedIn}
                         <li id="navSignOut"><a href="{$Path}logout.php">{translate key="SignOut"}</a></li>
                     {else}
-                        <li id="navLogIn"><a href="{$Path}index.php">{translate key="LogIn"}</a></li>
+                        <li id="navLogIn"><a class='navDireita' id="entrar" href="{$Path}index.php">{translate key="LogIn"}</a></li>
                     {/if}
                 </ul>
             </div>
