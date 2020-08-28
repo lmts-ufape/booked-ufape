@@ -1,21 +1,25 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif!important;
+}
+
+/* ----------- NAVBAR -----------*/
+
 .navbar-default{
   background-color: white!important; 
-  font-family: "Segoe UI", Arial, sans-serif;
 }
 
 .navbar-default .navbar-nav>li>a {
   color: #b2b2b2!important;
 }
 
-.container-fluid {
-  box-shadow: 0px 5px 5px #dcdcdc;
+#navBar {
+  box-shadow: 0px 5px 7px #dcdcdc;
 }
 
 #logo {
   margin-left: 150px;
   display: flex;
   align-items: center;
-  /* font-family: "Segoe UI", Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 1.4;  */
 }
 
 .logo {
@@ -54,5 +58,87 @@
 
 #entrar {
   color:#ff5d4b!important;
+  font-weight: 500;
+}
+
+body {
+  background-color: #f5f5f5!important;
+}
+
+
+/* ----------- LOGIN -----------*/
+#page-login {
+  display: flex;
+  justify-items: center;
+}
+
+#login-box {
+  width: 400px;
+  background-color: white!important;
+  border: none!important;
+  box-shadow: 0px 0px 15px 10px #dcdcdc;
+}
+
+#icone-login {
+  width: 60px;
+  float: left;
+}
+
+#logo-login {
+  height: 30px;
+  float: left;
+  margin-left: 20px;
+}
+
+.texto-login {
+  font-family: "rockwellregular";
+  font-weight: 600;
+  font-size: small;
+  line-height: 0.3;
+  color: #1492e6;
+  text-align: left;
+  margin-left: 30px;
+}
+
+#texto {
+  width: 240px;
+  margin-left: 52px;
+  margin-top:12px;
+}
+
+#email, #password {
+  width: 300px;
+  background-color: #fdffc5;
+  border-radius: 7px;
+}
+
+.negrito {
+  font-weight: bold!important;
+}
+
+.fonte-pequena {
+  font-size: 9pt;
+}
+
+.login-icon {
+  margin-bottom: 30px;
+}
+
+.checkbox {
+  margin-top:-18px!important;
+  padding-top: 0px!important; 
+  width:300px;
+}
+
+#esqueceu-senha {
+  float: right;
+  color: #1492e6;
+  text-decoration: underline;
+  font-weight: 500!important;
+}
+
+.entrar-btn {
+  background-color:#25cc03!important;
+  border: none!important;
   font-weight: 500;
 }

@@ -231,11 +231,12 @@ class pt_br extends en_gb
     $strings['None'] = 'Nenhum';
     $strings['AddToOutlook'] = 'Adicionar ao Outlook';
     $strings['Done'] = 'Concluído';
-    $strings['RememberMe'] = 'Lembrar-se de Mim';
+    $strings['RememberMe'] = 'Lembre-se de mim';
     $strings['FirstTimeUser?'] = 'Usuário Novo?';
     $strings['CreateAnAccount'] = 'Criar Uma Conta';
     $strings['ViewSchedule'] = 'Ver Agendas';
-    $strings['ForgotMyPassword'] = 'Eu Esqueci Minha Senha';
+    $strings['ViewCalendar'] = 'Ver Calendário';
+    $strings['ForgotMyPassword'] = 'Esqueci minha senha';
     $strings['YouWillBeEmailedANewPassword'] = 'Você receberá um email uma nova senha gerada aleatoriamente';
     $strings['Close'] = 'Fechar';
     $strings['ExportToCSV'] = 'Exportar para CSV';
@@ -829,6 +830,18 @@ class pt_br extends en_gb
     $strings['PermanentlyDeleteUsers'] = 'Excluir permanentemente os usuários que não estão conectados desde';
     $strings['SelectEmailTemplate'] = 'Selecione um modelo de email';
     
+    //Tradução
+    $strings['ReservationParticipationActivityPreference'] = 'Quando alguém entra ou deixa minha reserva';
+    $strings['Owner'] = 'Proprietário';
+    $strings['ScheduleConcurrentMaximumNone'] = 'Não há limite para o número de recursos reservados simultaneamente';
+    $strings['ScheduleResourcesPerReservationNone'] = 'Não há limite para o número de recursos por reserva';
+    $strings['ScheduleMaximumConcurrent'] = 'Número máximo de recursos reservados simultaneamente';   
+    $strings['ScheduleMaximumConcurrentNote'] = 'Quando preenchido, o número total de recursos que podem ser reservados
+    simultaneamente para esta agenda será limitado.';
+    $strings['ScheduleResourcesPerReservation'] = 'Número máximo de recursos por reserva';
+        
+             
+
     $this->Strings = $strings;
 
     return $this->Strings;

@@ -95,6 +95,7 @@ abstract class Page implements IPage
         $this->smarty->assign('EmailEnabled', Configuration::Instance()->GetKey(ConfigKeys::ENABLE_EMAIL, new BooleanConverter()));
 
         $this->smarty->assign('LogoUrl', 'booked.png');
+        $this->smarty->assign('LogoLogin', 'logo-login.png');
         if (file_exists($this->path . 'img/custom-logo.png')) {
             $this->smarty->assign('LogoUrl', 'custom-logo.png');
         }
