@@ -89,15 +89,15 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 				{/if}
 				
 
-                {if $EnableCaptcha}
-                    <div class="col-xs-12">
-                        <div class="margin-bottom-25">
-                        {control type="CaptchaControl"}
-                        </div>
-                    </div>
-                {else}
-                    <input type="hidden" {formname key=CAPTCHA} value=""/>
-                {/if}
+				{if $EnableCaptcha}
+						<div class="col-xs-12">
+								<div class="margin-bottom-25">
+								{control type="CaptchaControl"}
+								</div>
+						</div>
+				{else}
+						<input type="hidden" {formname key=CAPTCHA} value=""/>
+				{/if}
 
 				{if $ShowUsernamePrompt &&  $ShowPasswordPrompt}
 				<div class="col-xs-12">
@@ -109,14 +109,26 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 				{/if}
 
 
-                {if $ShowRegisterLink}
-                    <div class="col-xs-12 col-sm-6 register">
-                    <span class="bold">
-                    <a href="{$RegisterUrl}" {$RegisterUrlNew}
-                       title="{translate key=Register}">Clique aqui </a>
-                    </span>para criar o seu cadastro
-                    </div>
-                {/if}
+				{if $ShowRegisterLink}
+						<div class="col-xs-12 col-sm-12 register fonte-pequena">
+						<span class="bold">
+						<a id="cliqueaqui" href="{$RegisterUrl}" {$RegisterUrlNew}
+								title="{translate key=Register}">Clique aqui</a>
+						</span> para criar o seu cadastro
+						</div>
+				{/if}
+
+				<div id="change-language" class="col-xs-12 col-sm-12">
+					<button type="button" id="mudar-idioma" class="btn btn-link pull-right-sm fonte-pequena" data-toggle="collapse"
+							data-target="#change-language-options"><span><i class="glyphicon glyphicon-globe"></i></span>
+						{translate key=ChangeLanguage}
+					</button>
+					<div id="change-language-options" class="collapse">
+						<select {formname key=LANGUAGE} class="form-control input-sm" id="languageDropDown">
+							{object_html_options options=$Languages key='GetLanguageCode' label='GetDisplayName' selected=$SelectedLanguage}
+						</select>
+					</div>
+				</div>
 
 				<div class="clearfix"></div>
 
@@ -142,17 +154,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 				{/if}
 			</div>
 			<div id="login-footer" class="col-xs-12">				
-				<div id="change-language" class="col-xs-12 col-sm-6">
-					<button type="button" class="btn btn-link pull-right-sm" data-toggle="collapse"
-							data-target="#change-language-options"><span><i class="glyphicon glyphicon-globe"></i></span>
-						{translate key=ChangeLanguage}
-					</button>
-					<div id="change-language-options" class="collapse">
-						<select {formname key=LANGUAGE} class="form-control input-sm" id="languageDropDown">
-							{object_html_options options=$Languages key='GetLanguageCode' label='GetDisplayName' selected=$SelectedLanguage}
-						</select>
-					</div>
-				</div>
+				
 			</div>
 
 
