@@ -41,12 +41,12 @@ body {
   color: #1492e6;
 }
 
-.navDireita {
-  margin-right: 150px;
+.dropdown {
+  /* margin-right: 10px; */
 }
 
-.dropdown-toggle{
-  margin-right: 15px;
+#header-nav-dir {
+  margin-right:60px;
 }
 
 .caret {
