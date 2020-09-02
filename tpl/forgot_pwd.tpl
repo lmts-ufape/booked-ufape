@@ -27,22 +27,40 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 		</div>
 	{/if}
 
-<div id="forgotbox">
-	<form class="forgot" method="post" action="{$smarty.server.SCRIPT_NAME}">
-		<div class="forgot_pwdHeader">
-			<h1>{translate key='ForgotPassword'}</h1>
-		</div>
-		<div>
-			<p class="forgot">{translate key='YouWillBeEmailedANewPassword'}</p>
-			<p>
-				<label class="forgot">{translate key='EmailAddress'}<br />
-					{textbox name="EMAIL" class="input" size="20" tabindex="10"}</label>
-			</p>
-			<p class="resetpassword">
-				<button type="submit" class="btn btn-default" name="{Actions::RESET}" value="{Actions::RESET}">{translate key='ChangePassword'}</button>
-			</p>
-		</div>
-	</form>
+<div id="">
+
+	<div class="col-md-offset-4 col-md-4 col-xs-12 ">
+	
+			<div id="forgotbox" class="default-box">
+				
+				<form class="forgot" method="post" action="{$smarty.server.SCRIPT_NAME}">
+					<div class="forgot_pwdHeader">
+						<h1 id="forgotPassTitulo">{translate key='ForgotPassword'}</h1>
+					</div>
+					<hr>
+					<div class="col-md-12">
+						<p class="forgot" id="textoForgot">{translate key='YouWillBeEmailedANewPassword'}</p>
+						<p id="">
+							<label class="forgot inputForgot">{translate key='EmailAddress'}</label><br />
+								{textbox name="EMAIL" class="input emailForgot" size="20" tabindex="10"}
+						</p>
+						<p class="resetpassword">
+							<button id="botaoForgot" type="submit" class="btn btn-large btn-primary  btn-block entrar-btn" name="{Actions::RESET}" value="{Actions::RESET}"><span class="entrar-btn">{translate key='ChangePassword'}</span></button>
+						</p>
+					</div>
+				</form>
+
+				<div class="clearfix"></div>
+
+				
+			</div>
+			
+			<div id="login-footer" class="col-xs-12">				
+				
+			</div>
+
+
+	</div>
 </div>
 
 {setfocus key='EMAIL'}

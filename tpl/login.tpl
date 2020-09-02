@@ -55,7 +55,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 				{if $ShowUsernamePrompt}
 					<div class="col-xs-12">
 						<span class="negrito fonte-pequena">Usuário ou E-mail:</span><br>
-						<div class="input-group margin-bottom-25">						
+						<div class="margin-bottom-25">						
 							<input type="text" required="" class="form-control"
 								   id="email" {formname key=EMAIL} />
 						</div>
@@ -65,7 +65,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 				{if $ShowPasswordPrompt}
 					<div class="col-xs-12">
 					<span class="negrito fonte-pequena">Senha:</span><br>
-						<div class="input-group margin-bottom-25">						
+						<div class="margin-bottom-25">						
 							<input type="password" required="" id="password" {formname key=PASSWORD}
 								   class="form-control"
 								   value="" />

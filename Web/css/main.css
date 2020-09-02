@@ -124,7 +124,7 @@ a:hover {
   margin-top: 0;
   padding-bottom: 5px;
   font-weight: bold;
-  border-bottom: solid 1px #BCBCBC;
+  /* border-bottom: solid 1px #BCBCBC; */
 }
 @media (max-width: 768px) {
   .default-box h1 {

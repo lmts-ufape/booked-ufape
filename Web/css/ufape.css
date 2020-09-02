@@ -74,7 +74,7 @@ body {
 }
 
 #login-box {
-  width: 400px;
+  /* width: 400px; */
   background-color: white!important;
   border: none!important;
   border-radius: 10px;
@@ -109,7 +109,7 @@ body {
 }
 
 #email, #password {
-  width: 300px;
+  /* width: 300px; */
   background-color: #fdffc5;
   border-radius: 7px;
 }
@@ -142,7 +142,7 @@ body {
 .entrar-btn {
   background-color:#25cc03!important;
   border: none!important;
-  font-weight: 500;
+  font-weight: 500!important;
 }
 
 .register {
@@ -169,4 +169,87 @@ body {
 .footer {
   margin-top:-30px;
   height: 70px!important;
+}
+
+
+/*-------------- REGISTRO --------------*/
+
+
+#registration-box {
+  background-color: white!important;
+  border: none!important;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px 10px #dcdcdc;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.registro {
+  width: 100%!important;
+  background-color: #fdffc5!important;
+  border-radius: 7px!important;
+  border-width: 2px!important;
+}
+
+#titulo {
+  color: #1492e6;
+  font-size: 20px;
+  font-family: "rockwellregular";
+  font-weight: 500!important;
+  margin-bottom: 20px;
+}
+
+hr {
+  border-top-width: 2px!important;
+  border-top-color: #f5f5f5!important;
+}
+
+#imagemCaptcha {
+  /* padding-top:30px; */
+  text-align: center;
+}
+
+#registrarBotao {
+  margin-top: 20px;
+  border-radius: 7px!important;
+}
+
+
+/*-------------- REGISTRO --------------*/
+
+
+#forgotbox {
+  /* width: 400px; */
+  background-color: white!important;
+  border: none!important;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px 10px #dcdcdc;
+  margin-top: 20px;
+}
+
+#forgotPassTitulo {
+  color: #1492e6;
+  font-size: 20px;
+  font-family: "rockwellregular";
+  font-weight: 500!important;
+  margin-bottom: 20px;
+}
+
+#textoForgot {
+  font-weight: 600!important;
+}
+
+#emailForgot {
+  margin-top: 15px;
+}
+
+#botaoForgot {
+  background-color:#25cc03!important;
+  border: none!important;
+  font-weight: 500!important;
+  margin-top: 40px;
+}
+
+#inputForgot {
+  width: auto!important;
 }
