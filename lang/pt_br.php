@@ -219,7 +219,7 @@ class pt_br extends en_gb
     $strings['Rows'] = 'Linhas';
     $strings['Unlimited'] = 'Ilimitado';
     $strings['Email'] = 'Email';
-    $strings['EmailAddress'] = 'Endereço de Email';
+    $strings['EmailAddress'] = 'E-mail:';
     $strings['Phone'] = 'Telefone';
     $strings['Organization'] = 'Organização';
     $strings['Position'] = 'Posição';
@@ -237,7 +237,7 @@ class pt_br extends en_gb
     $strings['ViewSchedule'] = 'Ver Agendas';
     $strings['ViewCalendar'] = 'Ver Calendário';
     $strings['ForgotMyPassword'] = 'Esqueci minha senha';
-    $strings['YouWillBeEmailedANewPassword'] = 'Você receberá um email uma nova senha gerada aleatoriamente';
+    $strings['YouWillBeEmailedANewPassword'] = 'Você receberá um email com uma nova senha gerada aleatoriamente';
     $strings['Close'] = 'Fechar';
     $strings['ExportToCSV'] = 'Exportar para CSV';
     $strings['OK'] = 'OK';
@@ -476,11 +476,11 @@ class pt_br extends en_gb
     $strings['Common'] = 'Comum';
 	$strings['AdvancedFilter'] = 'Filtro avançado';
 	$strings['AllParticipants'] = 'Todos os participantes';
-	$strings['ResourceAvailability'] = 'Recurso disponível';
+	$strings['ResourceAvailability'] = 'Recurso Disponível';
 	$strings['UnavailableAllDay'] = 'Indisponivel todo o dia';
 	$strings['AvailableUntil'] = 'Disponível até';
 	$strings['AvailableBeginningAt'] = 'Disponível a parit de';
-	$strings['RegisterANewAccount'] = 'Registro de uma Nova Conta';
+	$strings['RegisterANewAccount'] = 'Cadastro de uma nova conta';
 	$strings['FindATime'] = 'Procure uma agenda';
 	$strings['Import'] = 'Importação';
 	$strings['SpecificDates'] = 'Mostrar datas específicas';
@@ -595,7 +595,7 @@ class pt_br extends en_gb
     $strings['MyAccount'] = 'Minha Conta';
     $strings['Profile'] = 'Perfil';
     $strings['ApplicationManagement'] = 'Gerenciamento de Aplicativos';
-    $strings['ForgotPassword'] = 'Esqueceu a Senha';
+    $strings['ForgotPassword'] = 'Esqueceu a senha';
     $strings['NotificationPreferences'] = 'Preferências de Notificação';
     $strings['ManageAnnouncements'] = 'Anúncios';
     $strings['Responsibilities'] = 'Responsabilidades';
@@ -839,6 +839,7 @@ class pt_br extends en_gb
     $strings['ScheduleMaximumConcurrentNote'] = 'Quando preenchido, o número total de recursos que podem ser reservados
     simultaneamente para esta agenda será limitado.';
     $strings['ScheduleResourcesPerReservation'] = 'Número máximo de recursos por reserva';
+    $strings['Reserve'] = 'Reservar';
         
              
 

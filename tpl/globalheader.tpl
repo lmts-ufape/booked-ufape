@@ -310,7 +310,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                     {/if}
 
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right" id="header-nav-dir">
                     {if $ShowScheduleLink}
                         <li class="dropdown" id="navScheduleDropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">{translate key="Schedule"} <b

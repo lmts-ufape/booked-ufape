@@ -18,9 +18,9 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 *}
 
 
-<div class="dashboard upcomingReservationsDashboard" id="upcomingReservationsDashboard">
+<div class="dashboard upcomingReservationsDashboard default-box col-xs-12 col-sm-8 col-sm-offset-2 dashboardCaixa" id="upcomingReservationsDashboard">
 	<div class="dashboardHeader">
-		<div class="pull-left">{translate key="UpcomingReservations"} <span class="badge">{$Total}</span></div>
+		<div class="pull-left dashboardTitulo">{translate key="UpcomingReservations"} <span class="badge">{$Total}</span></div>
 		<div class="pull-right">
 			<a href="#" title="{translate key=ShowHide} {translate key="UpcomingReservations"}">
 				<i class="glyphicon"></i>
@@ -29,6 +29,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 		</div>
 		<div class="clearfix"></div>
 	</div>
+	<hr>
 	<div class="dashboardContents">
 		{assign var=colspan value="5"}
 		{if $Total > 0}
