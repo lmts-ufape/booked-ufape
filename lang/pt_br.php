@@ -219,7 +219,7 @@ class pt_br extends en_gb
     $strings['Rows'] = 'Linhas';
     $strings['Unlimited'] = 'Ilimitado';
     $strings['Email'] = 'Email';
-    $strings['EmailAddress'] = 'Endereço de Email';
+    $strings['EmailAddress'] = 'E-mail:';
     $strings['Phone'] = 'Telefone';
     $strings['Organization'] = 'Organização';
     $strings['Position'] = 'Posição';
@@ -231,12 +231,13 @@ class pt_br extends en_gb
     $strings['None'] = 'Nenhum';
     $strings['AddToOutlook'] = 'Adicionar ao Outlook';
     $strings['Done'] = 'Concluído';
-    $strings['RememberMe'] = 'Lembrar-se de Mim';
+    $strings['RememberMe'] = 'Lembre-se de mim';
     $strings['FirstTimeUser?'] = 'Usuário Novo?';
     $strings['CreateAnAccount'] = 'Criar Uma Conta';
     $strings['ViewSchedule'] = 'Ver Agendas';
-    $strings['ForgotMyPassword'] = 'Eu Esqueci Minha Senha';
-    $strings['YouWillBeEmailedANewPassword'] = 'Você receberá um email uma nova senha gerada aleatoriamente';
+    $strings['ViewCalendar'] = 'Ver Calendário';
+    $strings['ForgotMyPassword'] = 'Esqueci minha senha';
+    $strings['YouWillBeEmailedANewPassword'] = 'Você receberá um email com uma nova senha gerada aleatoriamente';
     $strings['Close'] = 'Fechar';
     $strings['ExportToCSV'] = 'Exportar para CSV';
     $strings['OK'] = 'OK';
@@ -475,11 +476,11 @@ class pt_br extends en_gb
     $strings['Common'] = 'Comum';
 	$strings['AdvancedFilter'] = 'Filtro avançado';
 	$strings['AllParticipants'] = 'Todos os participantes';
-	$strings['ResourceAvailability'] = 'Recurso disponível';
+	$strings['ResourceAvailability'] = 'Recurso Disponível';
 	$strings['UnavailableAllDay'] = 'Indisponivel todo o dia';
 	$strings['AvailableUntil'] = 'Disponível até';
-	$strings['AvailableBeginningAt'] = 'Disponível a parit de';
-	$strings['RegisterANewAccount'] = 'Registro de uma Nova Conta';
+	$strings['AvailableBeginningAt'] = 'Disponível a partir de';
+	$strings['RegisterANewAccount'] = 'Cadastro de uma nova conta';
 	$strings['FindATime'] = 'Procure uma agenda';
 	$strings['Import'] = 'Importação';
 	$strings['SpecificDates'] = 'Mostrar datas específicas';
@@ -535,7 +536,7 @@ class pt_br extends en_gb
     $strings['MaxDurationError'] = 'Esta reserva não pode durar mais do que %s.';
     $strings['ConflictingAccessoryDates'] = 'Não são suficientes os seguintes acessórios:';
     $strings['NoResourcePermission'] = 'Você não tem permissão para acessar um ou mais dos recursos solicitados';
-    $strings['ConflictingReservationDates'] = 'Há reservas conflitantes nas seguintes datas:';
+    $strings['ConflictingReservationDates'] = 'As seguintes datas não estão disponíveis:';
     $strings['StartDateBeforeEndDateRule'] = 'A data de início deve ser anterior à data de término';
     $strings['StartIsInPast'] = 'A data de início não pode ser no passado';
     $strings['EmailDisabled'] = 'O administrador desabilitou notificações de e-mail';
@@ -594,7 +595,7 @@ class pt_br extends en_gb
     $strings['MyAccount'] = 'Minha Conta';
     $strings['Profile'] = 'Perfil';
     $strings['ApplicationManagement'] = 'Gerenciamento de Aplicativos';
-    $strings['ForgotPassword'] = 'Esqueceu a Senha';
+    $strings['ForgotPassword'] = 'Esqueceu a senha';
     $strings['NotificationPreferences'] = 'Preferências de Notificação';
     $strings['ManageAnnouncements'] = 'Anúncios';
     $strings['Responsibilities'] = 'Responsabilidades';
@@ -829,6 +830,20 @@ class pt_br extends en_gb
     $strings['PermanentlyDeleteUsers'] = 'Excluir permanentemente os usuários que não estão conectados desde';
     $strings['SelectEmailTemplate'] = 'Selecione um modelo de email';
     
+    //Tradução
+    $strings['ReservationParticipationActivityPreference'] = 'Quando alguém entra ou deixa minha reserva';
+    $strings['Owner'] = 'Proprietário';
+    $strings['ScheduleConcurrentMaximumNone'] = 'Não há limite para o número de recursos reservados simultaneamente';
+    $strings['ScheduleResourcesPerReservationNone'] = 'Não há limite para o número de recursos por reserva';
+    $strings['ScheduleMaximumConcurrent'] = 'Número máximo de recursos reservados simultaneamente';   
+    $strings['ScheduleMaximumConcurrentNote'] = 'Quando preenchido, o número total de recursos que podem ser reservados
+    simultaneamente para esta agenda será limitado.';
+    $strings['ScheduleResourcesPerReservation'] = 'Número máximo de recursos por reserva';
+    $strings['Reserve'] = 'Reservar';
+    $strings['AvailableAt'] = 'Disponível em';
+        
+             
+
     $this->Strings = $strings;
 
     return $this->Strings;

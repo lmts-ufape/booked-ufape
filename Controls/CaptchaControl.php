@@ -60,12 +60,12 @@ class CaptchaControl extends Control
 		$formName = FormKeys::CAPTCHA;
 
 		echo "<div id=\"captchaDiv\">
-                <div><img src=\"$url\" alt=\"captcha\" id=\"captchaImg\"/></div>
+								<div id=\"imagemCaptcha\"><img src=\"$url\" alt=\"captcha\" id=\"captchaImg\"/></div>								
 		        <label for=\"captchaValue\">$label</label>
-                <input type=\"text\" class=\"form-control\" name=\"$formName\" size=\"20\" id=\"$formName\" 
+                <input type=\"text\" class=\"form-control registro inputCaptcha\" name=\"$formName\" size=\"20\" id=\"$formName\" 
                 required=\"required\"
                 data-bv-notempty=\"true\"
-                data-bv-notempty-message=\"$message\"/>
-            </div>";
+								data-bv-notempty-message=\"$message\"/>
+							</div>";
 	}
 }

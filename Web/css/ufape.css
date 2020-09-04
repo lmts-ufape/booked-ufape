@@ -1,0 +1,452 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif!important;
+}
+
+/* ----------- NAVBAR -----------*/
+
+.navbar-default{
+  background-color: white!important; 
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #b2b2b2!important;
+}
+
+#navBar {
+  box-shadow: 0px 5px 7px #dcdcdc;
+}
+
+#logo {
+  margin-left: 130px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 30px;
+  width: 30px;
+  margin-top: 10px;
+}
+
+#booked {
+  margin-left: 5px;
+  font-weight: 400;
+}
+
+#ufape {
+  font-family: "rockwellregular";
+  font-weight: 500;
+  margin-left: 4px;
+  margin-top: 4px;
+  color: #1492e6;
+}
+
+#header-nav-dir {
+  margin-right:60px;
+}
+
+.caret {
+  border-top-width: 7px!important;
+  border-left-width: 7px!important;
+  border-right-width: 7px!important;
+  border-radius: 5px;
+}
+
+#entrar {
+  color:#ff5d4b!important;
+  font-weight: 500;
+}
+
+body {
+  background-color: #f5f5f5!important;
+}
+
+
+/* ----------- LOGIN -----------*/
+
+#page-login {
+  display: flex;
+  justify-items: center;
+}
+
+#login-box {
+  background-color: white!important;
+  border: none!important;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px 10px #dcdcdc;
+}
+
+#icone-login {
+  width: 60px;
+  float: left;
+}
+
+#logo-login {
+  height: 30px;
+  float: left;
+  margin-left: 20px;
+}
+
+.texto-login {
+  font-family: "rockwellregular";
+  font-weight: 600;
+  font-size: small;
+  line-height: 0.3;
+  color: #1492e6;
+  text-align: left;
+  margin-left: 30px;
+}
+
+#texto {
+  width: 240px;
+  margin-left: 52px;
+  margin-top:12px;
+}
+
+.loginInput {
+  background-color: #fdffc5!important;
+  border-radius: 7px!important;
+}
+
+.negrito {
+  font-weight: bold!important;
+}
+
+.fonte-pequena {
+  font-size: 9pt!important;
+}
+
+.login-icon {
+  margin-bottom: 30px;
+}
+
+#loginCheckbox {
+  margin-top:-18px!important;
+  padding-top: 0px!important; 
+  width:300px;
+}
+
+#esqueceu-senha {
+  float: right;
+  color: #1492e6;
+  text-decoration: underline;
+  font-weight: 500!important;
+}
+
+.entrar-btn {
+  background-color:#25cc03!important;
+  border: none!important;
+  font-weight: 500!important;
+}
+
+.register {
+  margin-top: -23px;
+  text-align: left!important;
+}
+
+#cliqueaqui {
+  color: #1492e6;
+  text-decoration: underline;
+}
+
+#mudar-idioma {
+  color: #1492e6;
+  text-decoration: underline;
+  margin-right: -12px;
+}
+
+#change-language {
+  margin-top: 10px;
+  margin-bottom: -25px;
+}
+
+.footer {
+  margin-top:-30px;
+  height: 70px!important;
+}
+
+
+/*-------------- REGISTRO --------------*/
+
+
+#registration-box {
+  background-color: white!important;
+  border: none!important;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px 10px #dcdcdc;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.registro {
+  width: 100%!important;
+  background-color: #fdffc5!important;
+  border-radius: 7px!important;
+  border-width: 2px!important;
+}
+
+#titulo {
+  color: #1492e6;
+  font-size: 20px;
+  font-family: "rockwellregular";
+  font-weight: 500!important;
+  margin-bottom: 20px;
+}
+
+.hr-escuro{
+  border-top-width: 2px!important;
+  border-top-color: #e1e1e1!important;
+}
+
+.hr-claro {
+  border-top-width: 2px!important;
+  border-top-color: #f5f5f5!important;
+}
+
+#imagemCaptcha {
+  text-align: center;
+}
+
+#registrarBotao {
+  margin-top: 20px;
+  border-radius: 7px!important;
+}
+
+
+/*-------------- ESQUECI A SENHA --------------*/
+
+
+#forgotbox {
+  background-color: white!important;
+  border: none!important;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px 10px #dcdcdc;
+  margin-top: 20px;
+}
+
+#forgotPassTitulo {
+  color: #1492e6;
+  font-size: 20px;
+  font-family: "rockwellregular";
+  font-weight: 500!important;
+  margin-bottom: 20px;
+}
+
+#textoForgot {
+  font-weight: 600!important;
+}
+
+#emailForgot {
+  margin-top: 15px;
+}
+
+#botaoForgot {
+  background-color:#25cc03!important;
+  border: none!important;
+  font-weight: 500!important;
+  margin-top: 40px;
+}
+
+#inputForgot {
+  width: auto!important;
+}
+
+/*-----------DASHBOARD----------*/
+
+.dashboardCaixa {
+  background-color: white!important;
+  border: none!important;
+  border-radius: 10px!important;
+  box-shadow: 0px 0px 15px 10px #dcdcdc!important;
+}
+
+.dashboardTitulo {
+  color: #1492e6!important;
+  font-size: 22px!important;
+  font-family: "rockwellregular"!important;
+  font-weight: 500!important;
+}
+
+.dashboardHeader {
+  background-color: white!important;
+  margin-bottom: -10px;
+}
+
+.noresults, .no-data {
+  color:#707070!important;
+}
+
+.dashboardHeader a {
+  color:#1492e6!important;
+}
+
+.dashboardHeader .badge {
+  font-size: 18px;
+  font-family: "Segoe UI", Arial, sans-serif!important;
+}
+
+.glyphicon-chevron-up {
+  font-size: 25px!important;
+}
+
+.availabilityDashboard .header {
+  font-weight: 500!important;
+}
+
+.dashboardDisponivelBotao {
+  width: 100%;
+  background-color: white!important;
+  border: solid 2px #ececec!important;
+  border-radius: 7px!important;
+  box-shadow: 0px 3px 5px 1px #ececec!important;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.fa-circle {
+  color:#1492e6!important;
+}
+
+.dashboardDisponivel {
+   margin-top: -20px;
+}
+
+#dashboardH5 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.dashboardTituloReserva {
+  text-align: left;
+}
+
+.availabilityDashboard .resourceName {
+  background-color: white!important;
+}
+
+.availabilityDashboard .resourceName a {
+  color: #BCBCBC!important;
+  font-weight: 500!important;
+}
+
+.reservarBotao {
+  background-color:#25cc03!important;
+  border: none!important;
+  box-shadow: 0px 5px 7px 1px #ececec!important;
+  width: 35%!important;
+  padding: 5px 0px!important;
+  font-weight: 500!important;
+  font-size: 14px!important;
+  float: right!important;
+}
+
+/*-------------- CRIAR RESERVA ----------------*/
+
+
+#reservation-box {
+  background-color: white!important;
+  border: none!important;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px 10px #dcdcdc;
+  margin-top: 20px;
+}
+
+.criarReservaTitulo {
+  color: #1492e6!important;
+  font-size: 22px!important;
+  font-family: "rockwellregular"!important;
+  font-weight: 500!important;
+}
+
+.azul {
+  color: #1492e6!important;
+}
+
+#showChangeUsers {
+  background-color: #1492e6!important;
+  color: white;
+  border: none!important;
+  border-radius: 5px;
+  padding: 2px 10px;
+}
+
+#showChangeUsers {
+  margin-left:10px!important;
+}
+
+.createReservationInput {
+  background-color: #fdffc5!important;
+  border-radius: 7px!important;
+}
+
+#btnAddResources {
+  background-color: #1492e6!important;
+  color: white;
+  border: none!important;
+  border-radius: 5px;
+  padding: 2px 10px;
+  margin-left: 10px;
+}
+
+#reservation-box .resourceName {
+  background-color: white!important;
+  color: #1492e6!important;
+  text-decoration: underline;
+  font-size: 1.2em;
+}
+
+#createReservationFooter {
+  margin-top: -30px;  
+}
+
+#createReservationFooterButtons {
+  margin-top: 10px;
+}
+
+#createReservationUsuario {
+  margin-top: -10px;
+}
+
+.createReservationLabel {
+  font-weight: 500!important;
+}
+
+#createReservationEndDate {
+  margin-bottom: 5px;
+}
+
+#createReservationLeft {
+  margin-top: 13px;
+}
+
+.createReservationRecurrence {
+  margin-top: 10px;
+}
+
+#createReservationAddResource {
+  margin-top: 10px;
+}
+
+#createReservationCancel {
+  border: none;
+  color: #707070;
+  font-weight: 500;
+  width: 100%;
+}
+
+#createReservationCreate {
+  background-color:#25cc03!important;
+  border: none!important;
+  box-shadow: 0px 5px 7px 1px #ececec!important;
+  width: 100%;
+  /* padding: 5px 0px!important; */
+  font-weight: 500!important;
+  font-size: 14px!important;
+  /* float: right!important; */
+}
+
+#createReservationDuration {
+  font-weight:400;
+}

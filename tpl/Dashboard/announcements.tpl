@@ -16,9 +16,9 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 *}
-<div class="dashboard" id="announcementsDashboard">
+<div class="dashboard default-box col-xs-12 col-sm-8 col-sm-offset-2 dashboardCaixa" id="announcementsDashboard">
 	<div class="dashboardHeader">
-		<div class="pull-left">{translate key="Announcements"} <span class="badge">{$Announcements|count}</span></div>
+		<div class="pull-left dashboardTitulo">{translate key="Announcements"} <span class="badge">{$Announcements|count}</span></div>
 		<div class="pull-right">
 			<a href="#" title="{translate key=ShowHide} {translate key="Announcements"}">
 				<i class="glyphicon"></i>
@@ -27,6 +27,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 		</div>
 		<div class="clearfix"></div>
 	</div>
+	<hr>
 	<div class="dashboardContents">
 		<ul>
 			{foreach from=$Announcements item=each}

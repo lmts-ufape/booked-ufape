@@ -17,9 +17,9 @@ You should have received a copy of the GNU General Public License
 along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 *}
 
-<div class="dashboard upcomingReservationsDashboard" id="adminUpcomingReservationsDashboard">
+<div class="dashboard upcomingReservationsDashboard default-box col-xs-12 col-sm-8 col-sm-offset-2 dashboardCaixa" id="adminUpcomingReservationsDashboard">
     <div class="dashboardHeader">
-        <div class="pull-left">{translate key="AllUpcomingReservations"} <span class="badge">{$Total}</span></div>
+        <div class="pull-left dashboardTitulo">{translate key="AllUpcomingReservations"} <span class="badge">{$Total}</span></div>
         <div class="pull-right">
             <a href="#" title="{translate key=ShowHide} {translate key="AllUpcomingReservations"}">
                 <i class="glyphicon"></i>
@@ -28,6 +28,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
         </div>
         <div class="clearfix"></div>
     </div>
+    <hr>
     <div class="dashboardContents">
         {assign var=colspan value="5"}
         {if $Total > 0}

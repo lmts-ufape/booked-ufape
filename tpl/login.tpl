@@ -18,12 +18,13 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 *}
 {include file='globalheader.tpl'}
 
+{if $ShowLoginError}
+	<div id="loginError" class="alert alert-danger">
+		{translate key='LoginError'}
+	</div>
+{/if}
+
 <div id="page-login">
-	{if $ShowLoginError}
-		<div id="loginError" class="alert alert-danger">
-			{translate key='LoginError'}
-		</div>
-	{/if}
 
     {if $EnableCaptcha}
         {validation_group class="alert alert-danger"}
@@ -39,72 +40,96 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
         </div>
     {/if}
 
-	<div class="col-md-offset-3 col-md-6 col-xs-12 ">
+	<div class="col-md-offset-4 col-md-4 col-xs-12 ">
 		<form role="form" name="login" id="login" class="form-horizontal" method="post"
 			  action="{$smarty.server.SCRIPT_NAME}">
 			<div id="login-box" class="col-xs-12 default-box">
 				<div class="col-xs-12 login-icon">
-					{html_image src="$LogoUrl?2.6" alt="$Title"}
+					{html_image src="$LogoUrl?2.6" alt="$Title" id="icone-login"}
+					{html_image src="$LogoLogin" alt="$Title" id="logo-login"}
+					<br>
+					<div id="texto">
+						<p class="texto-login">Sistemas de reservas de</p>
+						<p class="texto-login">espaços e equipamentos da UFAPE</p>
+					</div>
 				</div>
 				{if $ShowUsernamePrompt}
 					<div class="col-xs-12">
-						<div class="input-group margin-bottom-25">
-							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-							<input type="text" required="" class="form-control"
-								   id="email" {formname key=EMAIL}
-								   placeholder="{translate key=UsernameOrEmail}"/>
+						<span class="negrito fonte-pequena">Usuário ou E-mail:</span><br>
+						<div class="margin-bottom-25">						
+							<input type="text" required="" class="form-control loginInput"
+								   id="email" {formname key=EMAIL} />
 						</div>
 					</div>
 				{/if}
 
 				{if $ShowPasswordPrompt}
 					<div class="col-xs-12">
-						<div class="input-group margin-bottom-25">
-							<span class="input-group-addon">
-							<i class="glyphicon glyphicon-lock"></i>
-							</span>
+					<span class="negrito fonte-pequena">Senha:</span><br>
+						<div class="margin-bottom-25">						
 							<input type="password" required="" id="password" {formname key=PASSWORD}
-								   class="form-control"
-								   value="" placeholder="{translate key=Password}"/>
+								   class="form-control loginInput"
+								   value="" />
 						</div>
 					</div>
 				{/if}
 
-                {if $EnableCaptcha}
-                    <div class="col-xs-12">
-                        <div class="margin-bottom-25">
-                        {control type="CaptchaControl"}
-                        </div>
-                    </div>
-                {else}
-                    <input type="hidden" {formname key=CAPTCHA} value=""/>
-                {/if}
+				{if $ShowUsernamePrompt &&  $ShowPasswordPrompt}
+					<div class="col-xs-12 {if $ShowRegisterLink}col-sm-6{/if}">
+						<div class="checkbox" id="loginCheckbox">
+							<input id="rememberMe" type="checkbox" {formname key=PERSIST_LOGIN}>
+							<label class="negrito fonte-pequena" for="rememberMe">{translate key=RememberMe}</label>
+							{if $ShowForgotPasswordPrompt}							
+								<a class="fonte-pequena" id="esqueceu-senha" href="{$ForgotPasswordUrl}" {$ForgotPasswordUrlNew} ><span>
+												</span> {translate key='ForgotMyPassword'}</a>
+	
+							{/if}
+						</div>
+						
+					</div>					
+				{/if}
+				
+
+				{if $EnableCaptcha}
+						<div class="col-xs-12">
+								<div class="margin-bottom-25">
+								{control type="CaptchaControl"}
+								</div>
+						</div>
+				{else}
+						<input type="hidden" {formname key=CAPTCHA} value=""/>
+				{/if}
 
 				{if $ShowUsernamePrompt &&  $ShowPasswordPrompt}
 				<div class="col-xs-12">
-					<button type="submit" class="btn btn-large btn-primary  btn-block" name="{Actions::LOGIN}"
-							value="submit">{translate key='LogIn'}</button>
+					<button type="submit" class="btn btn-large btn-primary  btn-block entrar-btn" name="{Actions::LOGIN}"
+							value="submit"><span class="entrar-btn">{translate key='LogIn'}</span></button>
 					<input type="hidden" {formname key=RESUME} value="{$ResumeUrl}"/>
+					<hr>
 				</div>
 				{/if}
 
-				{if $ShowUsernamePrompt &&  $ShowPasswordPrompt}
-				<div class="col-xs-12 {if $ShowRegisterLink}col-sm-6{/if}">
-					<div class="checkbox">
-						<input id="rememberMe" type="checkbox" {formname key=PERSIST_LOGIN}>
-						<label for="rememberMe">{translate key=RememberMe}</label>
+
+				{if $ShowRegisterLink}
+						<div class="col-xs-12 col-sm-12 register fonte-pequena">
+						<span class="bold">
+						<a id="cliqueaqui" href="{$RegisterUrl}" {$RegisterUrlNew}
+								title="{translate key=Register}">Clique aqui</a>
+						</span> para criar o seu cadastro
+						</div>
+				{/if}
+
+				<div id="change-language" class="col-xs-12 col-sm-12">
+					<button type="button" id="mudar-idioma" class="btn btn-link pull-right-sm fonte-pequena" data-toggle="collapse"
+							data-target="#change-language-options"><span><i class="glyphicon glyphicon-globe"></i></span>
+						{translate key=ChangeLanguage}
+					</button>
+					<div id="change-language-options" class="collapse">
+						<select {formname key=LANGUAGE} class="form-control input-sm" id="languageDropDown">
+							{object_html_options options=$Languages key='GetLanguageCode' label='GetDisplayName' selected=$SelectedLanguage}
+						</select>
 					</div>
 				</div>
-				{/if}
-
-                {if $ShowRegisterLink}
-                    <div class="col-xs-12 col-sm-6 register">
-                    <span class="bold">{translate key="FirstTimeUser?"}
-                    <a href="{$RegisterUrl}" {$RegisterUrlNew}
-                       title="{translate key=Register}">{translate key=Register}</a>
-                    </span>
-                    </div>
-                {/if}
 
 				<div class="clearfix"></div>
 
@@ -129,24 +154,8 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 					</div>
 				{/if}
 			</div>
-			<div id="login-footer" class="col-xs-12">
-				{if $ShowForgotPasswordPrompt}
-					<div id="forgot-password" class="col-xs-12 col-sm-6">
-						<a href="{$ForgotPasswordUrl}" {$ForgotPasswordUrlNew} class="btn btn-link pull-left-sm"><span><i
-										class="glyphicon glyphicon-question-sign"></i></span> {translate key='ForgotMyPassword'}</a>
-					</div>
-				{/if}
-				<div id="change-language" class="col-xs-12 col-sm-6">
-					<button type="button" class="btn btn-link pull-right-sm" data-toggle="collapse"
-							data-target="#change-language-options"><span><i class="glyphicon glyphicon-globe"></i></span>
-						{translate key=ChangeLanguage}
-					</button>
-					<div id="change-language-options" class="collapse">
-						<select {formname key=LANGUAGE} class="form-control input-sm" id="languageDropDown">
-							{object_html_options options=$Languages key='GetLanguageCode' label='GetDisplayName' selected=$SelectedLanguage}
-						</select>
-					</div>
-				</div>
+			<div id="login-footer" class="col-xs-12">				
+				
 			</div>
 
 
