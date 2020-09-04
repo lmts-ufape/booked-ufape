@@ -17,7 +17,7 @@ body {
 }
 
 #logo {
-  margin-left: 150px;
+  margin-left: 130px;
   display: flex;
   align-items: center;
 }
@@ -39,10 +39,6 @@ body {
   margin-left: 4px;
   margin-top: 4px;
   color: #1492e6;
-}
-
-.dropdown {
-  /* margin-right: 10px; */
 }
 
 #header-nav-dir {
@@ -74,7 +70,6 @@ body {
 }
 
 #login-box {
-  /* width: 400px; */
   background-color: white!important;
   border: none!important;
   border-radius: 10px;
@@ -109,7 +104,6 @@ body {
 }
 
 #email, #password {
-  /* width: 300px; */
   background-color: #fdffc5;
   border-radius: 7px;
 }
@@ -199,13 +193,17 @@ body {
   margin-bottom: 20px;
 }
 
-hr {
+.hr-escuro{
+  border-top-width: 2px!important;
+  border-top-color: #e1e1e1!important;
+}
+
+.hr-claro {
   border-top-width: 2px!important;
   border-top-color: #f5f5f5!important;
 }
 
 #imagemCaptcha {
-  /* padding-top:30px; */
   text-align: center;
 }
 
@@ -219,7 +217,6 @@ hr {
 
 
 #forgotbox {
-  /* width: 400px; */
   background-color: white!important;
   border: none!important;
   border-radius: 10px;
@@ -343,4 +340,113 @@ hr {
   font-weight: 500!important;
   font-size: 14px!important;
   float: right!important;
+}
+
+/*-------------- CRIAR RESERVA ----------------*/
+
+
+#reservation-box {
+  background-color: white!important;
+  border: none!important;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px 10px #dcdcdc;
+  margin-top: 20px;
+}
+
+.criarReservaTitulo {
+  color: #1492e6!important;
+  font-size: 22px!important;
+  font-family: "rockwellregular"!important;
+  font-weight: 500!important;
+}
+
+.azul {
+  color: #1492e6!important;
+}
+
+#showChangeUsers {
+  background-color: #1492e6!important;
+  color: white;
+  border: none!important;
+  border-radius: 5px;
+  padding: 2px 10px;
+}
+
+#showChangeUsers {
+  margin-left:10px!important;
+}
+
+.createReservationInput {
+  background-color: #fdffc5!important;
+  border-radius: 7px!important;
+}
+
+#btnAddResources {
+  background-color: #1492e6!important;
+  color: white;
+  border: none!important;
+  border-radius: 5px;
+  padding: 2px 10px;
+  margin-left: 10px;
+}
+
+#reservation-box .resourceName {
+  background-color: white!important;
+  color: #1492e6!important;
+  text-decoration: underline;
+  font-size: 1.2em;
+}
+
+#createReservationFooter {
+  margin-top: -30px;  
+}
+
+#createReservationFooterButtons {
+  margin-top: 10px;
+}
+
+#createReservationUsuario {
+  margin-top: -10px;
+}
+
+.createReservationLabel {
+  font-weight: 500!important;
+}
+
+#createReservationEndDate {
+  margin-bottom: 5px;
+}
+
+#createReservationLeft {
+  margin-top: 13px;
+}
+
+.createReservationRecurrence {
+  margin-top: 10px;
+}
+
+#createReservationAddResource {
+  margin-top: 10px;
+}
+
+#createReservationCancel {
+  border: none;
+  color: #707070;
+  font-weight: 500;
+  width: 100%;
+}
+
+#createReservationCreate {
+  background-color:#25cc03!important;
+  border: none!important;
+  box-shadow: 0px 5px 7px 1px #ececec!important;
+  width: 100%;
+  /* padding: 5px 0px!important; */
+  font-weight: 500!important;
+  font-size: 14px!important;
+  /* float: right!important; */
+}
+
+#createReservationDuration {
+  font-weight:400;
 }
