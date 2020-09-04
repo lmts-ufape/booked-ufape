@@ -479,7 +479,7 @@ class pt_br extends en_gb
 	$strings['ResourceAvailability'] = 'Recurso Disponível';
 	$strings['UnavailableAllDay'] = 'Indisponivel todo o dia';
 	$strings['AvailableUntil'] = 'Disponível até';
-	$strings['AvailableBeginningAt'] = 'Disponível a parit de';
+	$strings['AvailableBeginningAt'] = 'Disponível a partir de';
 	$strings['RegisterANewAccount'] = 'Cadastro de uma nova conta';
 	$strings['FindATime'] = 'Procure uma agenda';
 	$strings['Import'] = 'Importação';
@@ -536,7 +536,7 @@ class pt_br extends en_gb
     $strings['MaxDurationError'] = 'Esta reserva não pode durar mais do que %s.';
     $strings['ConflictingAccessoryDates'] = 'Não são suficientes os seguintes acessórios:';
     $strings['NoResourcePermission'] = 'Você não tem permissão para acessar um ou mais dos recursos solicitados';
-    $strings['ConflictingReservationDates'] = 'Há reservas conflitantes nas seguintes datas:';
+    $strings['ConflictingReservationDates'] = 'As seguintes datas não estão disponíveis:';
     $strings['StartDateBeforeEndDateRule'] = 'A data de início deve ser anterior à data de término';
     $strings['StartIsInPast'] = 'A data de início não pode ser no passado';
     $strings['EmailDisabled'] = 'O administrador desabilitou notificações de e-mail';
@@ -840,6 +840,7 @@ class pt_br extends en_gb
     simultaneamente para esta agenda será limitado.';
     $strings['ScheduleResourcesPerReservation'] = 'Número máximo de recursos por reserva';
     $strings['Reserve'] = 'Reservar';
+    $strings['AvailableAt'] = 'Disponível em';
         
              
 
