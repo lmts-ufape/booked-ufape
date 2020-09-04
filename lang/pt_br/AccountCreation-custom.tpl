@@ -22,11 +22,11 @@ Saudações!<br/><br/>
 <p>{$To},</p>
 
 <p>Um novo usuário foi registrado com as seguintes informações:<br/>
-Email: {$EmailAddress}<br/>
-Nome: {$FullName}<br/>
-Telefone: {$Phone}<br/>
-Organização: {$Organization}<br/>
-Posição: {$Position}</p>
+<b>Email:</b> {$EmailAddress}<br/>
+<b>Nome:</b> {$FullName}<br/>
+<b>Telefone:</b> {$Phone}<br/>
+<b>Organização:</b> {$Organization}<br/>
+<b>Posição:</b> {$Position}</p>
 {if !empty($CreatedBy)}
 	Criado por: {$CreatedBy}
 {/if}
@@ -34,5 +34,5 @@ Posição: {$Position}</p>
 <br/><br/>
 Atenciosamente,<br/><br/>
 
-Diretoria Administrativa<br/>
+Vice-reitoria<br/>
 UFAPE

@@ -22,12 +22,12 @@ Saudações!<br/><br/>
 <p>{$FullName},</p>
 
 <p>Uma conta para {$AppTitle} foi criada para você com os seguintes detalhes:<br/>
-Email: {$EmailAddress}<br/>
-Nome: {$FullName}<br/>
-Telefone: {$Phone}<br/>
-Organização: {$Organization}<br/>
-Posição: {$Position}<br/>
-Senha: {$Password}</p>
+<b>Email:</b> {$EmailAddress}<br/>
+<b>Nome:</b> {$FullName}<br/>
+<b>Telefone:</b> {$Phone}<br/>
+<b>Organização:</b> {$Organization}<br/>
+<b>Posição:</b> {$Position}<br/>
+<b>Senha:</b> {$Password}</p>
 {if !empty($CreatedBy)}
 	Criado por: {$CreatedBy}
 {/if}
@@ -36,5 +36,5 @@ Senha: {$Password}</p>
 
 <br/><br/>Atenciosamente,<br/><br/>
 
-Diretoria Administrativa<br/>
+Vice-reitoria<br/>
 UFAPE

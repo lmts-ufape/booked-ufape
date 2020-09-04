@@ -29,5 +29,5 @@ Sua senha antiga não funcionará mais.
 
 <br/><br/>Atenciosamente,<br/><br/>
 
-Diretoria Administrativa<br/>
+Vice-reitoria<br/>
 UFAPE

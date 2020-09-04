@@ -28,5 +28,5 @@ Saudações!<br/><br/>
 
 <br/><br/>Atenciosamente,<br/><br/>
 
-Diretoria Administrativa<br/>
+Vice-reitoria<br/>
 UFAPE

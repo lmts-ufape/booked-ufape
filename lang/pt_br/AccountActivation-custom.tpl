@@ -25,5 +25,5 @@ Obrigado por utilizar o Booked Scheduler. Por favor, <a href="{$ActivationUrl}">
 <br/><br/>
 Atenciosamente,<br/><br/>
 
-Diretoria Administrativa<br/>
+Vice-reitoria<br/>
 UFAPE
