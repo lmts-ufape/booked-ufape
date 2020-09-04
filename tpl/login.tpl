@@ -18,12 +18,13 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 *}
 {include file='globalheader.tpl'}
 
+{if $ShowLoginError}
+	<div id="loginError" class="alert alert-danger">
+		{translate key='LoginError'}
+	</div>
+{/if}
+
 <div id="page-login">
-	{if $ShowLoginError}
-		<div id="loginError" class="alert alert-danger">
-			{translate key='LoginError'}
-		</div>
-	{/if}
 
     {if $EnableCaptcha}
         {validation_group class="alert alert-danger"}
@@ -56,7 +57,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 					<div class="col-xs-12">
 						<span class="negrito fonte-pequena">Usuário ou E-mail:</span><br>
 						<div class="margin-bottom-25">						
-							<input type="text" required="" class="form-control"
+							<input type="text" required="" class="form-control loginInput"
 								   id="email" {formname key=EMAIL} />
 						</div>
 					</div>
@@ -67,7 +68,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 					<span class="negrito fonte-pequena">Senha:</span><br>
 						<div class="margin-bottom-25">						
 							<input type="password" required="" id="password" {formname key=PASSWORD}
-								   class="form-control"
+								   class="form-control loginInput"
 								   value="" />
 						</div>
 					</div>
@@ -75,7 +76,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 
 				{if $ShowUsernamePrompt &&  $ShowPasswordPrompt}
 					<div class="col-xs-12 {if $ShowRegisterLink}col-sm-6{/if}">
-						<div class="checkbox">
+						<div class="checkbox" id="loginCheckbox">
 							<input id="rememberMe" type="checkbox" {formname key=PERSIST_LOGIN}>
 							<label class="negrito fonte-pequena" for="rememberMe">{translate key=RememberMe}</label>
 							{if $ShowForgotPasswordPrompt}							

@@ -42,7 +42,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 						<p class="forgot" id="textoForgot">{translate key='YouWillBeEmailedANewPassword'}</p>
 						<p id="">
 							<label class="forgot inputForgot">{translate key='EmailAddress'}</label><br />
-								{textbox name="EMAIL" class="input emailForgot" size="20" tabindex="10"}
+								{textbox name="EMAIL" class="input emailForgot loginInput" size="20" tabindex="10"}
 						</p>
 						<p class="resetpassword">
 							<button id="botaoForgot" type="submit" class="btn btn-large btn-primary  btn-block entrar-btn" name="{Actions::RESET}" value="{Actions::RESET}"><span class="entrar-btn">{translate key='ChangePassword'}</span></button>

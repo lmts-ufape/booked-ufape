@@ -103,9 +103,9 @@ body {
   margin-top:12px;
 }
 
-#email, #password {
-  background-color: #fdffc5;
-  border-radius: 7px;
+.loginInput {
+  background-color: #fdffc5!important;
+  border-radius: 7px!important;
 }
 
 .negrito {
@@ -120,7 +120,7 @@ body {
   margin-bottom: 30px;
 }
 
-.checkbox {
+#loginCheckbox {
   margin-top:-18px!important;
   padding-top: 0px!important; 
   width:300px;
@@ -213,7 +213,7 @@ body {
 }
 
 
-/*-------------- REGISTRO --------------*/
+/*-------------- ESQUECI A SENHA --------------*/
 
 
 #forgotbox {

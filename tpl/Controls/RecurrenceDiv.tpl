@@ -19,9 +19,9 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 <div id="{$prefix}repeatDiv" class="repeat-div">
 	<div class="form-group">
 		<div class="col-xs-12">
-			<label class="createReservationLabel" for="{$prefix}repeatOptions">{translate key="RepeatPrompt"}</label><br>
+			<label for="{$prefix}repeatOptions">{translate key="RepeatPrompt"}</label><br>
 			<select id="{$prefix}repeatOptions" {formname key=repeat_options}
-					class=" createReservationInput form-control input-sm repeat-drop inline-block">
+					class="form-control input-sm repeat-drop inline-block">
 				{foreach from=$RepeatOptions key=k item=v}
 					<option value="{$k}">{translate key=$v['key']}</option>
 				{/foreach}
