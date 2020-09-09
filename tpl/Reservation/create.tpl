@@ -323,7 +323,6 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                         <div class="reservationDescription">
                             <div class="form-group has-feedback">
                                 <label class="createReservationLabel" for="description">{translate key="ReservationDescription"} (ex: especificar equipamento e procedimento a ser realizado e outras informações relevantes):
-                                
                                 </label>
                                  {if $DescriptionRequired}
                                     <i class="glyphicon glyphicon-asterisk form-control-feedback" id="description-icon"
