@@ -268,9 +268,9 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                                     <div id="createReservationAddResource">
                                         <label class="createReservationLabel">{translate key="Resources"}</label>
                                         {if $ShowAdditionalResources}
-                                            <button id="btnAddResources" href="#"
+                                            <a id="btnAddResources" href="#"
                                             class="small-action" data-toggle="modal"
-                                            data-target="#dialogResourceGroups">{translate key=Change}</button>
+                                            data-target="#dialogResourceGroups">{translate key=Change}</a>
                                         {/if}
                                     </div>
 
@@ -310,7 +310,8 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 
                         <div class="reservationTitle">
                             <div class="form-group has-feedback">
-                                <label class="createReservationLabel" for="reservationTitle">{translate key="ReservationTitle"}</label>
+                                <label class="createReservationLabel" for="reservationTitle">{translate key="ReservationTitle"}
+                                </label>
                                 {textbox name="RESERVATION_TITLE" class="form-control createReservationInput" value="ReservationTitle" id="reservationTitle" maxlength="300" required=$TitleRequired}
                                 {if $TitleRequired}
                                     <i class="glyphicon glyphicon-asterisk form-control-feedback"
@@ -323,13 +324,14 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                             <div class="form-group has-feedback">
                                 <label class="createReservationLabel" for="description">{translate key="ReservationDescription"} (ex: especificar equipamento e procedimento a ser realizado e outras informações relevantes):
                                 </label>
+                                 {if $DescriptionRequired}
+                                    <i class="glyphicon glyphicon-asterisk form-control-feedback" id="description-icon"
+                                    data-bv-icon-for="description"></i>
+                                {/if}
                                 <textarea id="description" rows="10" name="{FormKeys::DESCRIPTION}"
                                         class="form-control createReservationInput"
                                         {if $DescriptionRequired}required="required"{/if}>{$Description}</textarea>
-                                {if $DescriptionRequired}
-                                    <i class="glyphicon glyphicon-asterisk form-control-feedback"
-                                    data-bv-icon-for="description"></i>
-                                {/if}
+                               
 
                             </div>
                         </div>      

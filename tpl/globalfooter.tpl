@@ -19,8 +19,21 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 
 	</div><!-- close main-->
 
-	<footer class="footer navbar">
-		&copy; 2020 <a href="http://www.twinkletoessoftware.com">Twinkle Toes Software</a> <br/><a href="http://www.bookedscheduler.com">Booked Scheduler v{$Version}</a>
+	<footer class="footer">
+		<div class="row justify-content-center footer-row">
+			<div class="col-sm-4 coluna">							
+				<a href="http://ufape.edu.br/">{html_image src="$LogoUFAPE" alt="$Title" id="logoUFAPE"}</a><br>
+				<span id="footer-span-ufape">Universidade Federal<br> do Agreste de Pernambuco</span>
+			</div>
+			<div class="col-sm-4 coluna" id="footer-copyright">
+					&copy; 2020 <a href="http://www.twinkletoessoftware.com">Twinkle Toes Software</a> <br/><a href="http://www.bookedscheduler.com">Booked Scheduler v{$Version}</a>
+			</div>
+			<div class="col-sm-4 coluna">
+				<span id="footer-apoio">Apoio:</span> <br>
+				<a href="http://www.lmts.uag.ufrpe.br/br">{html_image src="$LogoLMTS" alt="$Title" id="logoLMTS"}</a><br>
+				<span id="">Laboratório Multidisciplinar<br> de Tecnologias Sociais</span>
+			</div>
+		</div>
 	</footer>
 
 	<script type="text/javascript">

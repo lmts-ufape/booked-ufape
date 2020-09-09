@@ -38,8 +38,8 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
             {foreach from=$availability item=i}
                 <button class="availabilityItem dashboardDisponivelBotao" disabled>
                     <div class="col-xs-12 col-sm-4 dashboardTituloReserva">
-                        <i resource-id="{$i->ResourceId()}" class="resourceNameSelector fa fa-circle"></i>
                         <div class="resourceName" style="background-color:{$i->GetColor()};color:{$i->GetTextColor()};">
+                            <i resource-id="{$i->ResourceId()}" class="resourceNameSelector fa fa-circle"></i>
                             <a href="{$Path}{Pages::RESERVATION}?{QueryStringKeys::RESOURCE_ID}={$i->ResourceId()}"
                                resource-id="{$i->ResourceId()}"
                                class="resourceNameSelector" style="color:{$i->GetTextColor()}">{$i->ResourceName()}</a>
@@ -74,8 +74,8 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
             {foreach from=$availability item=i}
                 <button class="availabilityItem dashboardDisponivelBotao" disabled>
                     <div class="col-xs-12 col-sm-4 dashboardTituloReserva">       
-                        <i resource-id="{$i->ResourceId()}" class="resourceNameSelector fa fa-circle"></i>                 
                         <div class="resourceName" style="background-color:{$i->GetColor()};color:{$i->GetTextColor()};">
+                            <i resource-id="{$i->ResourceId()}" class="resourceNameSelector fa fa-circle"></i>                 
                             <a href="{$Path}{Pages::RESERVATION}?{QueryStringKeys::RESOURCE_ID}={$i->ResourceId()}"
                                resource-id="{$i->ResourceId()}"
                                class="resourceNameSelector" style="color:{$i->GetTextColor()}">{$i->ResourceName()}</a>
@@ -104,8 +104,8 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
             {foreach from=$availability item=i}
                 <button class="availabilityItem dashboardDisponivelBotao" disabled>
                     <div class="col-xs-12 col-sm-4 dashboardTituloReserva">
-                        <i resource-id="{$i->ResourceId()}" class="resourceNameSelector fa fa-info-circle"></i>
                         <div class="resourceName" style="background-color:{$i->GetColor()};color:{$i->GetTextColor()};">
+                            <i resource-id="{$i->ResourceId()}" class="resourceNameSelector fa fa-circle"></i>
                             <a href="{$Path}{Pages::RESERVATION}?{QueryStringKeys::RESOURCE_ID}={$i->ResourceId()}"
                                resource-id="{$i->ResourceId()}"
                                class="resourceNameSelector" style="color:{$i->GetTextColor()}">{$i->ResourceName()}</a>
