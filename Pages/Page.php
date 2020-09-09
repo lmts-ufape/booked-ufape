@@ -96,6 +96,9 @@ abstract class Page implements IPage
 
         $this->smarty->assign('LogoUrl', 'booked.png');
         $this->smarty->assign('LogoLogin', 'logo-login.png');
+        $this->smarty->assign('LogoLMTS', 'lmts.png');
+        $this->smarty->assign('LogoUFAPE', 'logo-ufape.png');
+
         if (file_exists($this->path . 'img/custom-logo.png')) {
             $this->smarty->assign('LogoUrl', 'custom-logo.png');
         }

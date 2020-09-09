@@ -2,7 +2,7 @@ body {
   font-family: "Segoe UI", Arial, sans-serif!important;
 }
 
-/* ----------- NAVBAR -----------*/
+/* ----------- HEADER -----------*/
 
 .navbar-default{
   background-color: white!important; 
@@ -61,6 +61,24 @@ body {
   background-color: #f5f5f5!important;
 }
 
+/*------------ FOOTER ----------*/
+#logoLMTS {
+  height: 50px;
+  margin-top:10px;
+  margin-bottom:5px;
+}
+
+#logoUFAPE {
+  height: 80px;
+}
+
+#footer-copyright {
+  margin-top:40px;
+}
+
+.footer .coluna {
+  margin-bottom: 5px;
+}
 
 /* ----------- LOGIN -----------*/
 
@@ -101,6 +119,10 @@ body {
   width: 240px;
   margin-left: 52px;
   margin-top:12px;
+}
+
+.login-username {
+  margin-bottom: 10px;
 }
 
 .loginInput {
@@ -160,11 +182,22 @@ body {
   margin-bottom: -25px;
 }
 
-.footer {
+.footer-row {
   margin-top:-30px;
-  height: 70px!important;
+  margin-right: 0px!important; 
+  padding-top:5px;
+  background-color: #646360!important;
 }
 
+@media screen and (max-width: 768px) {
+  .footer .coluna{
+    margin-bottom:30px;   
+  }
+  .footer-row {
+    margin-top:20px;
+  }
+  
+}
 
 /*-------------- REGISTRO --------------*/
 
@@ -286,6 +319,10 @@ body {
 }
 
 .glyphicon-chevron-up {
+  font-size: 25px!important;
+}
+
+.glyphicon-chevron-down {
   font-size: 25px!important;
 }
 
@@ -449,4 +486,10 @@ body {
 
 #createReservationDuration {
   font-weight:400;
+}
+
+#description-icon {
+  position:relative;
+  float:right;  
+  top:35px;
 }

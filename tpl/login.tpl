@@ -54,9 +54,9 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 					</div>
 				</div>
 				{if $ShowUsernamePrompt}
-					<div class="col-xs-12">
+					<div class="col-xs-12 login-username">
 						<span class="negrito fonte-pequena">Usuário ou E-mail:</span><br>
-						<div class="margin-bottom-25">						
+						<div>						
 							<input type="text" required="" class="form-control loginInput"
 								   id="email" {formname key=EMAIL} />
 						</div>
